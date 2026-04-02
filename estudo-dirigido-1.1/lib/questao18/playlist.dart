@@ -8,10 +8,10 @@ class Playlist {
   Musica _musica3;
 
   Playlist(this._nome, this._musica1, this._musica2, this._musica3) {
-    if(_nome.isEmpty) {
+    if (_nome.isEmpty) {
       throw ArgumentError('O nome da playlist nao pode ser vazio');
     }
-    if(_musica1 == null || _musica2 == null || _musica3 == null) {
+    if (_musica1 == null || _musica2 == null || _musica3 == null) {
       throw ArgumentError('Musicas invalidas');
     }
   }

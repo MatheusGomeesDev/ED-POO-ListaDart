@@ -8,10 +8,10 @@ class Treinador {
   Pokemon _pokemon3;
 
   Treinador(this._nome, this._pokemon1, this._pokemon2, this._pokemon3) {
-    if(_nome.isEmpty) {
+    if (_nome.isEmpty) {
       throw ArgumentError('O nome do treinador nao pode ser vazio');
     }
-    if(_pokemon1 == null || _pokemon2 == null || _pokemon3 == null) {
+    if (_pokemon1 == null || _pokemon2 == null || _pokemon3 == null) {
       throw ArgumentError('Pokemons invalidos');
     }
   }
@@ -25,10 +25,10 @@ class Treinador {
   pokemonMaisForte() {
     Pokemon maisForte = _pokemon1;
 
-    if(_pokemon2.nivel > maisForte.nivel) {
+    if (_pokemon2.nivel > maisForte.nivel) {
       maisForte = _pokemon2;
     }
-    if(_pokemon3.nivel > maisForte.nivel) {
+    if (_pokemon3.nivel > maisForte.nivel) {
       maisForte = _pokemon3;
     }
 

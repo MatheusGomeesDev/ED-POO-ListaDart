@@ -8,13 +8,13 @@ class Lampada {
 
   exibirEstado() {
     print("======================================");
-    if(_ligada) {
+    if (_ligada) {
       print("A lampada esta ligada");
     } else {
       print("A lampada esta desligada");
     }
 
-    if(_queimada) {
+    if (_queimada) {
       print("A lampada esta queimada");
     } else {
       print("A lampada nao esta queimada");
@@ -23,18 +23,18 @@ class Lampada {
    }
 
   ligarLampada() {
-    if(_queimada) {
+    if (_queimada) {
       print("A lampada esta queimada");
       return;
     }
-    if(_ligada) {
+    if (_ligada) {
       print("A lampada ja esta ligada");
       return;
     }
 
     _qtdLigacoes++;
 
-    if(_qtdLigacoes > 5) {
+    if (_qtdLigacoes > 5) {
       _queimada = true;
       print("A lampada queimou");
       return;
@@ -43,11 +43,11 @@ class Lampada {
   }
 
    desligarLampada() {
-    if(_queimada) {
+    if (_queimada) {
       print("A lampada esta queimada");
       return;
     }
-    if(!_ligada) {
+    if (!_ligada) {
       print("A lampada ja esta desligada");
       return;
     }

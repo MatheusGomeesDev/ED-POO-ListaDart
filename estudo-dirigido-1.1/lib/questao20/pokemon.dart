@@ -7,19 +7,19 @@ class Pokemon {
   int _hp;
 
   Pokemon(this._numero, this._nome, this._tipo, this._nivel, this._hp) {
-    if(_numero < 1) {
+    if (_numero < 1) {
       throw ArgumentError('Numero invalido');
     }
-    if(_nome.isEmpty) {
+    if (_nome.isEmpty) {
       throw ArgumentError('Nome nao pode ser vazio');
     }
-    if(_tipo.isEmpty) {
+    if (_tipo.isEmpty) {
       throw ArgumentError('Tipo nao pode ser vazio');
     }
-    if(_nivel < 1 || _nivel > 100) {
+    if (_nivel < 1 || _nivel > 100) {
       throw ArgumentError('Nivel deve estar entre 1 e 100');
     }
-    if(_hp <= 0) {
+    if (_hp <= 0) {
       throw ArgumentError('HP deve ser maior que 0');
     }
   }

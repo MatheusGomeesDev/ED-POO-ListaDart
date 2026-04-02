@@ -6,7 +6,7 @@ class Carro {
   Motor _motor;
 
   Carro(this._modelo, this._motor) {
-    if(_modelo.isEmpty) {
+    if (_modelo.isEmpty) {
       throw ArgumentError('O modelo nao pode ser vazio');
     }
   }

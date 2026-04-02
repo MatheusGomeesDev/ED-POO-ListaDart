@@ -5,13 +5,13 @@ class Personagem {
   int _ataque;
 
   Personagem(this._nome, this._vida, this._ataque) {
-    if(_nome.isEmpty) {
+    if (_nome.isEmpty) {
       throw ArgumentError('O nome nao pode ser vazio');
     }
-    if(_vida <= 0) {
+    if (_vida <= 0) {
       throw ArgumentError('A vida deve ser maior que 0');
     }
-    if(_ataque <= 0) {
+    if (_ataque <= 0) {
       throw ArgumentError('O ataque deve ser maior que 0');
     }
   }
@@ -21,14 +21,14 @@ class Personagem {
   set vida(int valor) => _vida = valor;
 
   atacar(Personagem inimigo) {
-    if(!estaVivo()) {
+    if (!estaVivo()) {
       print("$_nome nao pode atacar pois esta morto");
       return;
     }
 
     inimigo.vida = inimigo.vida - _ataque;
 
-    if(inimigo.vida < 0) {
+    if (inimigo.vida < 0) {
       inimigo.vida = 0;
     }
 

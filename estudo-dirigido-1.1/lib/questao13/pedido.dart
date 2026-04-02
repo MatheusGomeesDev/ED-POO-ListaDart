@@ -7,10 +7,10 @@ class Pedido {
   int _quantidade;
 
   Pedido(this._numero, this._produto, this._quantidade) {
-    if(_numero < 1) {
+    if (_numero < 1) {
       throw ArgumentError('O numero deve ser maior que 0');
     }
-    if(_quantidade < 1) {
+    if (_quantidade < 1) {
       throw ArgumentError('A quantidade deve ser maior que 0');
     }
   }

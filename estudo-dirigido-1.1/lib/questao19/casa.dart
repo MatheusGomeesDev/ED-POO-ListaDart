@@ -8,10 +8,10 @@ class Casa {
   Comodo _comodo3;
 
   Casa(this._proprietario, this._comodo1, this._comodo2, this._comodo3) {
-    if(_proprietario.isEmpty) {
+    if (_proprietario.isEmpty) {
       throw ArgumentError('O proprietario nao pode ser vazio');
     }
-    if(_comodo1 == null || _comodo2 == null || _comodo3 == null) {
+    if (_comodo1 == null || _comodo2 == null || _comodo3 == null) {
       throw ArgumentError('Comodos invalidos');
     }
   }

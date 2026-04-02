@@ -9,17 +9,17 @@ class Triangulo {
 
   Triangulo(this._lado1, this._lado2, this._lado3, this._caractere) {
 
-    if(_lado1 <= 0 || _lado2 <= 0 || _lado3 <= 0) {
+    if (_lado1 <= 0 || _lado2 <= 0 || _lado3 <= 0) {
       throw ArgumentError('Os lados devem ser maiores que 0');
     }
 
-    if(_lado1 + _lado2 <= _lado3 ||
+    if (_lado1 + _lado2 <= _lado3 ||
        _lado1 + _lado3 <= _lado2 ||
        _lado2 + _lado3 <= _lado1) {
       throw ArgumentError('Os lados nao formam um triangulo valido');
     }
 
-    if(_caractere.isEmpty || _caractere.length > 1) {
+    if (_caractere.isEmpty || _caractere.length > 1) {
       throw ArgumentError('O caractere deve ter apenas 1 simbolo');
     }
   }
@@ -75,11 +75,11 @@ class Triangulo {
   }
 
   alterarLados(double l1, double l2, double l3) {
-    if(l1 <= 0 || l2 <= 0 || l3 <= 0) {
+    if (l1 <= 0 || l2 <= 0 || l3 <= 0) {
       throw ArgumentError('Os lados devem ser maiores que 0');
     }
 
-    if(l1 + l2 <= l3 || l1 + l3 <= l2 || l2 + l3 <= l1) {
+    if (l1 + l2 <= l3 || l1 + l3 <= l2 || l2 + l3 <= l1) {
       throw ArgumentError('Triangulo invalido');
     }
 
@@ -89,7 +89,7 @@ class Triangulo {
   }
 
   alterarCaractere(String novo) {
-    if(novo.isEmpty || novo.length > 1) {
+    if (novo.isEmpty || novo.length > 1) {
       throw ArgumentError('Caractere invalido');
     }
     _caractere = novo;

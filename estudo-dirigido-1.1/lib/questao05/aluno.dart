@@ -13,7 +13,7 @@ class Aluno {
 
   String verificarAprovacao(double media) {
     String aprovacao;
-    if(media >= 6 && media <= 10) {
+    if (media >= 6 && media <= 10) {
       aprovacao = "Aprovado";
       return aprovacao;
     } else if (media >= 0 && media < 6) {

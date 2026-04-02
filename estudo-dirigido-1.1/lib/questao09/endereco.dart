@@ -8,22 +8,22 @@ class Endereco {
   int _cep;
 
   Endereco(this._rua, this._numero, this._bairro, this._cidade, this._estado, this._cep) {
-    if(_rua.isEmpty) {
+    if (_rua.isEmpty) {
       throw ArgumentError('A rua nao pode ser nula');
     }
-    if(_numero < 1) {
+    if (_numero < 1) {
       throw ArgumentError('O numero deve ser maior que zero');
     }
-    if(_bairro.isEmpty) {
+    if (_bairro.isEmpty) {
       throw ArgumentError('O bairro nao pode ser nulo');
     }
-    if(_cidade.isEmpty) {
+    if (_cidade.isEmpty) {
       throw ArgumentError('A cidade nao pode ser nula');
     }
-    if(_estado.isEmpty) {
+    if (_estado.isEmpty) {
       throw ArgumentError('O estado nao pode ser nulo');
     }
-    if(_cep.isNaN) {
+    if (_cep.isNaN) {
       throw ArgumentError('O cep nao pode ser nulo');
     }
   }

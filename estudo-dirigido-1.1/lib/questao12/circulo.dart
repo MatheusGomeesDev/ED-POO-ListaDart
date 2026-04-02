@@ -6,10 +6,10 @@ class Circulo {
   const double pi = 3.14;
 
   Circulo(this._raio, this._cor) {
-    if(_raio <= 0) {
+    if (_raio <= 0) {
       throw ArgumentError('O raio deve ser maior que 0');
     }
-    if(_cor.isEmpty) {
+    if (_cor.isEmpty) {
       throw ArgumentError('A cor nao pode ser vazia');
     }
   }

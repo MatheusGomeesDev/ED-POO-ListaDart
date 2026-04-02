@@ -3,7 +3,7 @@ class Contador {
   int _contador;
 
   Contador(this._contador) {
-    if(_contador < 0) {
+    if (_contador < 0) {
       throw ArgumentError('O valor inicial do contador e invalido');
     }
   }
@@ -13,7 +13,7 @@ class Contador {
   }
 
   decrementar() {
-    if(_contador == 0) {
+    if (_contador == 0) {
       print("O valor do contador ja e zero");
       return;
     }

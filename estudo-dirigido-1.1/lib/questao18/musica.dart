@@ -5,13 +5,13 @@ class Musica {
   int _duracaoSegundos;
 
   Musica(this._titulo, this._artista, this._duracaoSegundos) {
-    if(_titulo.isEmpty) {
+    if (_titulo.isEmpty) {
       throw ArgumentError('O titulo nao pode ser vazio');
     }
-    if(_artista.isEmpty) {
+    if (_artista.isEmpty) {
       throw ArgumentError('O artista nao pode ser vazio');
     }
-    if(_duracaoSegundos <= 0) {
+    if (_duracaoSegundos <= 0) {
       throw ArgumentError('A duracao deve ser maior que 0');
     }
   }

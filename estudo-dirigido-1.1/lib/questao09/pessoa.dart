@@ -7,13 +7,13 @@ class Pessoa {
   Endereco _endereco;
 
   Pessoa(this._nome, this._idade, this._cpf, this._endereco) {
-    if(_nome.isEmpty) {
+    if (_nome.isEmpty) {
       throw ArgumentError('O nome nao pode ser nulo');
     }
-    if(_idade < 0) {
+    if (_idade < 0) {
       throw ArgumentError('A idade deve ser maior que zero');
     }
-    if(_cpf.isEmpty) {
+    if (_cpf.isEmpty) {
       throw ArgumentError('O cpf nao pode ser nulo');
     }
   }
