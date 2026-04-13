@@ -16,3 +16,13 @@ void main() {
   tv.exibir();
 
 }
+
+// a) Por que o controle remoto consegue alterar diretamente o estado da televisao?
+// Pois o controle remoto recebe no construtor uma referencia para o objeto Televisao.
+// Ao chamar metodos como aumentarVolume() e proximoCanal(), o controle esta manipulando
+// o mesmo objeto Televisao que foi criado no main, e nao uma copia dele.
+
+// b) O controle remoto possui uma copia da televisao ou uma referencia para o mesmo objeto?
+// Possui uma referencia para o mesmo objeto. Pois ao usar o controle para alterar 
+// volume e o canal também reflete no main
+
