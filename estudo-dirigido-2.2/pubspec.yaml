@@ -1,0 +1,7 @@
+name: estudo_dirigido_2_2
+description: "Estudo Dirigido 2.2 - Exercicios de Programacao Orientada a Objetos em Dart"
+version: 1.0.0
+publish_to: 'none'
+
+environment:
+  sdk: ^3.0.0
